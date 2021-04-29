@@ -1,0 +1,41 @@
+.screen{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+    align-self: end;
+}
+
+.screen__size{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.screen__fullLogo{
+    object-fit: contain;
+}
+.screen__outlineLogo{
+    object-fit: contain;
+    display: none;
+}
+
+@media (prefers-reduced-motion: no-preference){
+    .screen__fullLogo{
+        animation: screen-logo-spin infinite 5s linear;
+    }
+}
+
+@keyframes screen-logo-spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
