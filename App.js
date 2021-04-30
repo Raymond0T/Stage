@@ -1,6 +1,6 @@
 import './App.css';
-import Stage from './Stage.js';
-import Ceiling from './Ceiling.js';
+import Stage from './Components/Stage.js';
+import Ceiling from './Components/Ceiling.js';
 
 function App(){
   return (
@@ -8,6 +8,7 @@ function App(){
     
       <Stage />
       <Ceiling />
+      {/* Drumline */}
     {/* speaker */}
     {/* Lights */}
     {/* Fog */}

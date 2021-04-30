@@ -1,0 +1,41 @@
+.screen{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+    align-self: end;
+}
+
+.screen__size{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 5px;
+}
+
+.screen__fullLogo{
+    object-fit: contain;
+    filter: invert(43%) sepia(81%) saturate(1412%) hue-rotate(199deg) brightness(98%) contrast(96%) drop-shadow(0 0 1rem blue);
+}
+.screen__outlineLogo{
+    object-fit: contain;
+    display: none;
+    filter: invert(43%) sepia(81%) saturate(1412%) hue-rotate(199deg) brightness(98%) contrast(96%) drop-shadow(0 0 1rem blue);
+}
+
+@media (prefers-reduced-motion: no-preference){
+    .screen__fullLogo{
+        animation: screen-logo-spin infinite 5s linear;
+    }
+}
+
+@keyframes screen-logo-spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
