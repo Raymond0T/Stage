@@ -1,0 +1,11 @@
+.leftSpeaker{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: end;
+}
+
+.speaker1{
+    margin-left: 25px;
+}
