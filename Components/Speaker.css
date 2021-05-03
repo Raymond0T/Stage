@@ -7,6 +7,7 @@
     flex-direction: row;
 }
 
+
 .speaker__box__leftSub, .speaker__box__rightSub{
     width: 20px;
     height: 20px;
@@ -21,4 +22,29 @@
     background-color:grey;
     border-radius: 100%;
     margin: 6px;
+}
+
+
+@media(prefers-reduced-motion: no-preference){
+    .speaker__box__leftSub, .speaker__box__rightSub,.speaker__box__rightSub__inner, .speaker__box__leftSub__inner{
+        animation: bass 1s ease-in-out infinite;
+    }
+}
+
+@keyframes bass{
+    0%{
+        transform: scale(1.0);
+    }
+    25%{
+        transform: scale(1.10);
+    }
+    50%{
+        transform: scale(1.15);
+    }
+    75%{
+        transform: scale(1.10);
+    }
+    100%{
+        transform: scale(1.0);
+    }
 }
