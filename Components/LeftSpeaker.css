@@ -1,0 +1,39 @@
+.leftSpeaker{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: end;
+}
+
+.speaker1{
+    margin-left: 25px;
+}
+
+/*
+@media(prefers-reduced-motion: no-preference){
+    .leftSpeaker{
+        animation: sound 1s ease-in-out infinite;
+    }
+}
+
+@keyframes sound{
+    0%{
+        transform: translateX(5px);
+    }
+    25%{
+        transform: translateX(10px);
+    }
+    50%{
+        transform: translateX(15px);
+    }
+    75%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(5px);
+    }
+
+}
+
+*/

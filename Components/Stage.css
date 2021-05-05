@@ -20,7 +20,8 @@
     grid-row-end: 3;
 }
 .stage__leftDisplay{
-    justify-self: end;
+    justify-self: start;
+    align-self: start;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
