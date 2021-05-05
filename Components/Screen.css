@@ -13,6 +13,7 @@
     justify-content: center;
     background-color: black;
     padding: 5px;
+    box-shadow: 0 0 50px;
 }
 
 .screen__fullLogo{
