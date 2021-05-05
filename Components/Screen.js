@@ -3,10 +3,10 @@ import './Screen.css';
 import LogoOutline from '../images/logo-outline.png';
 import LogoCenter from '../images/logo-center.png';
 
-function Screen({screenWidth,screenHeight, logoWidth, logoHeight, radius, shadow, background}){
+function Screen({screenWidth,screenHeight, logoWidth, logoHeight, radius,  background, color}){
     return(
         <div className="screen">
-            <div className="screen__size" style={{width: screenWidth, height:screenHeight, borderRadius: radius, boxShadow: shadow, backgroundColor: background}}>
+            <div className="screen__size" style={{width: screenWidth, height:screenHeight, borderRadius: radius,  backgroundColor: background, color: color }}>
                 <img 
                     className="screen__fullLogo"
                     style={{width: logoWidth, height: logoHeight, }}
