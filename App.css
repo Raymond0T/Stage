@@ -13,7 +13,7 @@
   grid-row-end: 3;
 }
 
-.app__light{
+.app__lightLeft__Lower{
   justify-self: start;
   align-self: center;
   grid-column-start: 2;
@@ -23,6 +23,39 @@
   display: flex;
   flex-direction: row;
 }
+.app__lightLeft__Upper{
+  justify-self: start;
+  align-self: start;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  flex-direction: row;
+}
+.app__lightRight__Lower{
+  justify-self: end;
+  align-self: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  flex-direction: row;
+}
+.app__lightRight__Upper{
+  justify-self: end;
+  align-self: start;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
 /*
 .App-logo {
   height: 40vmin;

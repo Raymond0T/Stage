@@ -1,14 +1,21 @@
 .light{
-    margin-left: 20px;
+    margin-right: 35px;
 }
 .light__bulb{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: yellow;
+}
+
+.light__glare{
+    width: 50px;
+    height: 50px;
+    filter: blur(1px);
+    filter: invert(43%) sepia(81%) saturate(1412%) hue-rotate(199deg) brightness(98%) contrast(96%) drop-shadow(0 0 1rem blue);
 }
 
 .light__ray{
+    display: none;
     width: 30%;
     height: 3%;
     position: fixed;
@@ -16,3 +23,20 @@
     -webkit-transform: perspective(100px) rotate(90deg) rotateY(-25deg);
 
 }
+
+
+
+@media(prefers-reduced-motion: no-preference){
+    .light__glare{
+      animation: shining 4s infinite linear;
+    }
+  }
+  
+  @keyframes shining{
+    from{
+      transform: rotate(0);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
