@@ -1,0 +1,18 @@
+.light{
+    margin-left: 20px;
+}
+.light__bulb{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+.light__ray{
+    width: 30%;
+    height: 3%;
+    position: fixed;
+    background: linear-gradient(to right, #52fd85 5%, transparent);
+    -webkit-transform: perspective(100px) rotate(90deg) rotateY(-25deg);
+
+}

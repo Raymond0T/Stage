@@ -6,12 +6,20 @@ import Ceiling from './Components/Ceiling.js';
 import Drumline from './Components/Drumline.js';
 import LeftSpeaker from './Components/LeftSpeaker.js';
 import RightSpeaker from './Components/RightSpeaker.js';
+import Light from './Components/Light.js';
+
 
 function App(){
 
 
   return (
     <div className="app">  
+      <div className="app__light">
+        <Light posVert="18%" posHori="58.5%"/>
+        <Light posVert="18%" posHori="56.25%"/>
+        <Light posVert="18%" posHori="54.25%"/>
+        <Light posVert="18%" posHori="52.25%"/>
+      </div>
       <Stage />
       <Ceiling />
       <Drumline />

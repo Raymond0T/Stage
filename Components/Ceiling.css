@@ -22,7 +22,8 @@
     object-fit: contain;
     width: 150px;
     height: 100px;
-    filter: invert(43%) sepia(81%) saturate(1412%) hue-rotate(199deg) brightness(98%) contrast(96%) drop-shadow(0 0 1rem blue);
+    filter: invert(45%) sepia(81%) saturate(2000%) hue-rotate(255deg) brightness(98%) contrast(2000%) drop-shadow(0 0 1rem rgb(241, 241, 245));
+    
 }
 
 .ceiling__leftPanel{
@@ -32,6 +33,7 @@
     grid-row-start: 2;
     grid-row-end: 3;
     transform: rotate(-15deg);
+    filter: drop-shadow(0 0 2rem);
 }
 
 .ceiling__rightPanel{
@@ -41,7 +43,10 @@
     grid-row-start: 2;
     grid-row-end: 3;
     transform: rotate(15deg);
+    filter: drop-shadow(0 0 2rem);
 }
+
+
 
 
 /*

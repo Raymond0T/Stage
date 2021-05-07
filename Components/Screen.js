@@ -6,7 +6,7 @@ import LogoCenter from '../images/logo-center.png';
 function Screen({screenWidth,screenHeight, logoWidth, logoHeight, radius,  background, color}){
     return(
         <div className="screen">
-            <div className="screen__size" style={{width: screenWidth, height:screenHeight, borderRadius: radius,  backgroundColor: background, color: color }}>
+            <div className="screen__size" style={{width: screenWidth, height:screenHeight, borderRadius: radius, backgroundColor: background, color: color }}>
                 <img 
                     className="screen__fullLogo"
                     style={{width: logoWidth, height: logoHeight, }}
