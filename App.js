@@ -15,32 +15,32 @@ function App(){
   return (
     <div className="app">  
       <div className="app__lightLeft__Lower">
-        <Light posVert="18%" posHori="58.5%"/>
-        <Light posVert="18%" posHori="56.25%"/>
-        <Light posVert="18%" posHori="54.25%"/>
-        <Light posVert="18%" posHori="52.25%"/>
-        <Light posVert="18%" posHori="52.25%"/>
+        <Light posVert="14%" posHori="58.75%"/>
+        <Light posVert="14%" posHori="55.75%"/>
+        <Light posVert="14%" posHori="53%"/>
+        <Light posVert="14%" posHori="50%"/>
+        <Light posVert="14%" posHori="47%"/>
       </div>
       <div className="app__lightLeft__Upper">
-        <Light posVert="18%" posHori="58.5%"/>
-        <Light posVert="18%" posHori="56.25%"/>
-        <Light posVert="18%" posHori="54.25%"/>
-        <Light posVert="18%" posHori="52.25%"/>
-        <Light posVert="18%" posHori="52.25%"/>
+        <Light posVert="8%" posHori="58.75%"/>
+        <Light posVert="8%" posHori="55.75%"/>
+        <Light posVert="8%" posHori="53%"/>
+        <Light posVert="8%" posHori="50%"/>
+        <Light posVert="8%" posHori="47%"/>
       </div>
       <div className="app__lightRight__Lower">
-        <Light posVert="18%" posHori="58.5%"/>
-        <Light posVert="18%" posHori="56.25%"/>
-        <Light posVert="18%" posHori="54.25%"/>
-        <Light posVert="18%" posHori="52.25%"/>
-        <Light posVert="18%" posHori="52.25%"/>
+        <Light posVert="14%" posHori="23%"/>
+        <Light posVert="14%" posHori="20%"/>
+        <Light posVert="14%" posHori="17%"/>
+        <Light posVert="14%" posHori="14%"/>
+        <Light posVert="14%" posHori="12%"/>
       </div>
       <div className="app__lightRight__Upper">
-        <Light posVert="18%" posHori="58.5%"/>
-        <Light posVert="18%" posHori="56.25%"/>
-        <Light posVert="18%" posHori="54.25%"/>
-        <Light posVert="18%" posHori="52.25%"/>
-        <Light posVert="18%" posHori="52.25%"/>
+        <Light posVert="8%" posHori="23%"/>
+        <Light posVert="8%" posHori="20%"/>
+        <Light posVert="8%" posHori="17%"/>
+        <Light posVert="8%" posHori="14%"/>
+        <Light posVert="8%" posHori="12%"/>
       </div>
       
       <Stage />

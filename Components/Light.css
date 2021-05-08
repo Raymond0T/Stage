@@ -1,42 +1,58 @@
 .light{
-    margin-right: 35px;
+  margin-right: 35px;
 }
 .light__bulb{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
 
 .light__glare{
-    width: 50px;
-    height: 50px;
-    filter: blur(1px);
-    filter: invert(43%) sepia(81%) saturate(1412%) hue-rotate(199deg) brightness(98%) contrast(96%) drop-shadow(0 0 1rem blue);
+  width: 50px;
+  height: 50px;
+  filter: blur(1px);
+  filter: invert(43%) sepia(81%) saturate(1412%) hue-rotate(250deg) brightness(98%) contrast(96%) drop-shadow(0 0 1rem blue);
 }
 
 .light__ray{
-    display: none;
-    width: 30%;
-    height: 3%;
-    position: fixed;
-    background: linear-gradient(to right, #52fd85 5%, transparent);
-    -webkit-transform: perspective(100px) rotate(90deg) rotateY(-25deg);
+  width: 30%;
+  height: 2%;
+  position: fixed;
+  background: linear-gradient(to right, #31ca5f 1%, transparent);
+  -webkit-transform: perspective(100px) rotate(90deg) rotateY(90deg);
 
 }
 
 
+@media(prefers-reduced-motion: no-preference){
+  .light__ray{
+    animation: rainbow 10s ease-in-out infinite;
+  }
+}
+
+@keyframes rainbow{
+  0%{
+    -webkit-transform: perspective(100px)  rotate(90deg) rotateY(80deg);
+  }
+  50%{
+    -webkit-transform: perspective(100px)  rotate(90deg) rotateY(160deg);
+  }
+  100%{
+    -webkit-transform: perspective(100px)  rotate(90deg) rotateY(80deg);
+  }
+}
 
 @media(prefers-reduced-motion: no-preference){
-    .light__glare{
-      animation: shining 4s infinite linear;
-    }
+  .light__glare{
+    animation: shining 4s infinite linear;
   }
+}
   
-  @keyframes shining{
-    from{
-      transform: rotate(0);
-    }
-    to{
-      transform: rotate(360deg);
-    }
+@keyframes shining{
+  from{
+    transform: rotate(0);
   }
+  to{
+    transform: rotate(360deg);
+  }
+}

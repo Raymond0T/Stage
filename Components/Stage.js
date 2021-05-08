@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 
 import './Stage.css';
 import Screen from './Screen.js';
+import Light from './Light.js';
 
 
 function Stage(){
@@ -50,6 +51,18 @@ function Stage(){
 
     return(
         <div className="stage">
+            <div className="stage__mainLight__left">
+                <Light posVert="18%" posHori="44.75%"/>
+                <Light posVert="18%" posHori="47.5%"/>
+                <Light posVert="18%" posHori="50.5%"/>
+                <Light posVert="18%" posHori="53.5%"/>
+            </div>
+            <div className="stage__mainLight__right">
+                <Light posVert="18%" posHori="17%"/>
+                <Light posVert="18%" posHori="20%"/>
+                <Light posVert="18%" posHori="22.75%"/>
+                <Light posVert="18%" posHori="25.5%"/>
+            </div>
             <div className="stage__mainDisplay">
                 <Screen screenWidth="300px" screenHeight="150px" logoWidth="200px" logoHeight="200px" radius="2px" background={colorOption[color]} color={colorOption[color]} shadow=" 0 0 20px "/>
             </div>
