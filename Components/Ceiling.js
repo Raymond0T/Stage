@@ -53,11 +53,11 @@ function Ceiling(){
             </div>
 
             <div className="ceiling__leftPanel">
-                <Screen screenWidth="75px" screenHeight="50px" logoWidth="0" logoHeight="0" radius="20px" background="black" shadow=" 0 0 20px blue" color={panelColor[option]}/>
+                <Screen screenWidth="75px" screenHeight="50px" logoWidth="0" logoHeight="0" radius="20px" background="black" shadow=" 0 0 40px" color={panelColor[option]}/>
             </div>
 
             <div className="ceiling__rightPanel">
-                <Screen screenWidth="75px" screenHeight="50px" logoWidth="0" logoHeight="0" radius="20px" background="black" shadow=" 0 0 20px blue" color={panelColor[option]}/>
+                <Screen screenWidth="75px" screenHeight="50px" logoWidth="0" logoHeight="0" radius="20px" background="black" shadow=" 0 0 40px" color={panelColor[option]}/>
             </div>
             
         </div>
