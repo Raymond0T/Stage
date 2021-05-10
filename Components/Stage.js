@@ -7,7 +7,7 @@ import Lantern from './Lantern.js';
 
 function Stage(){
     const colorOption = ['black','#2dd3e9','#c52bab','#5ddf59','#95a034'];
-    const time = [100,1000,1000,2000,5000,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,1000];
+    const time = [5000,4000,5000,4000,5000,4000,5000,4000,5000,4000,5000,20,20,20,20,20,20,20,20,20,20,20,20,20,1000];
     let [color, setColor] = useState(0);
     let [temp, setTemp] = useState(0);
     useEffect(() =>{

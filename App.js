@@ -1,6 +1,7 @@
-import './App.css';
-
 import React, {useState, useEffect} from 'react';
+import './App.css';
+import ReactPlayer from 'react-player';
+
 import Stage from './Components/Stage.js';
 import Ceiling from './Components/Ceiling.js';
 import Drumline from './Components/Drumline.js';
@@ -12,7 +13,7 @@ import Lantern from './Components/Lantern.js';
 function App(){
 
   const option = [1,24,55,85,150,250];
-  const time = [100,1000,1000,2000,5000,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,1000];
+  const time = [35000,20,20,20,20,20,20,20,20,20,20,20,20,20,1000];
   let [color, setColor] = useState(0);
   let [temp, setTemp] = useState(0);
 
@@ -73,7 +74,16 @@ function App(){
         <Lantern posVert="8%" posHori="14%" color={option[color]}/>
         <Lantern posVert="8%" posHori="12%" color={option[color]}/>
       </div>
-
+    {/*
+      <ReactPlayer 
+        url='https://www.youtube.com/watch?v=6-47Jf8thfM&ab_channel=XxODESZAxX'
+        playing={true}
+        autoplay
+        controls={false}
+        light={true}
+        playsinline={true}
+      />
+    */}
       <Stage />
       <Ceiling />
       <Drumline />

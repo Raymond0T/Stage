@@ -8,10 +8,10 @@ import Screen from './Screen.js';
 function Ceiling(){
 
     let [option, setOption] = useState(0);
-    let [temp, setTemp] = useState(0);
+    let [temp, setTemp] = useState(-1);
 
     const panelColor = ['blue','red','purple','green','black'];
-    const time = [100,1000,1000,2000,5000,1000]
+    const time = [30000,20,20,20,20,20,20,20,20,20,20,20,20,20,1000];
 
     useEffect(()=>{
         let choice = Math.floor(Math.random() * (panelColor.length - 1));
