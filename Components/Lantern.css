@@ -16,7 +16,7 @@
 filter: invert(43%) sepia(81%) saturate(1412%) hue-rotate(200deg) brightness(98%) contrast(96%) drop-shadow(0 0 1rem blue);
 */
 .lantern__ray{
-  display:none;
+  display:block;
   width: 30%;
   height: 2%;
   position: fixed;
@@ -27,7 +27,7 @@ filter: invert(43%) sepia(81%) saturate(1412%) hue-rotate(200deg) brightness(98%
 
 @media(prefers-reduced-motion: no-preference){
   .lantern__ray{
-    animation: rainbow 10s ease-in-out infinite;
+    animation: rainbow 40s ease-in-out infinite;
   }
 }
 

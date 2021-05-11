@@ -7,7 +7,7 @@ import Lantern from './Lantern.js';
 
 function Stage(){
     const colorOption = ['black','#2dd3e9','#c52bab','#5ddf59','#95a034'];
-    const time = [5000,4000,5000,4000,5000,4000,5000,4000,5000,4000,5000,20,20,20,20,20,20,20,20,20,20,20,20,20,1000];
+    const time = [14000,3000,20,20,20,20,20,20,20,20,20,20,20,20,20,4000,5000,4000,5000,4000,5000,6000,20,20,20,20,20,20,20,20,20,20,20,20,20,5000,5000,5000,5000,5000,5000,29000,4000,5000,4000,5000,4000,5000,4000,5000,4000,5000,4000,5000,4000,5000,5000,6000];
     let [color, setColor] = useState(0);
     let [temp, setTemp] = useState(0);
     useEffect(() =>{
@@ -31,7 +31,17 @@ function Stage(){
                 setColor(colorChoice);
                 setTemp(temp=0);
             },time[temp]);
-            console.log(time[temp] + ' stage');
+            console.log(time[temp] + ' stage '+temp);
+            return()=>{
+                clearInterval(interval_id);
+            }
+        }
+        else if(temp === 0 || temp === 42 || temp === 50){
+            const interval_id = setTimeout(()=>{
+                setColor(0);
+                setTemp(temp += 1);
+            },time[temp]);
+            console.log(time[temp] + ' stage'+ temp);
             return()=>{
                 clearInterval(interval_id);
             }
@@ -41,7 +51,7 @@ function Stage(){
                 setColor(colorChoice);
                 setTemp(temp += 1);
             },time[temp]);
-            console.log(time[temp] + ' stage');
+            console.log(time[temp] + ' stage' + temp);
             return()=>{
                 clearInterval(interval_id);
             }

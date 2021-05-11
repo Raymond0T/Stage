@@ -8,10 +8,10 @@ import Screen from './Screen.js';
 function Ceiling(){
 
     let [option, setOption] = useState(0);
-    let [temp, setTemp] = useState(-1);
+    let [temp, setTemp] = useState(0);
 
-    const panelColor = ['blue','red','purple','green','black'];
-    const time = [30000,20,20,20,20,20,20,20,20,20,20,20,20,20,1000];
+    const panelColor = ['black','blue','red','purple','green',];
+    const time = [14000,3000,20,20,20,20,20,20,20,20,20,20,20,20,20,4000,5000,4000,5000,4000,5000,6000,20,20,20,20,20,20,20,20,20,20,20,20,20,5000,5000,5000,5000,5000,5000,29000,4000,5000,4000,5000,4000,5000,4000,5000,4000,5000,4000,5000,4000,5000,5000,6000]
 
     useEffect(()=>{
         let choice = Math.floor(Math.random() * (panelColor.length - 1));
@@ -25,6 +25,16 @@ function Ceiling(){
                 setTemp(temp = 0);
             },time[temp]);
             console.log(time[temp] + ' ceiling');
+            return()=>{
+                clearInterval(interval_id);
+            }
+        }
+        else if(temp === 0 || temp === 42 || temp === 50){
+            const interval_id = setTimeout(()=>{
+                setOption(0);
+                setTemp(temp += 1);
+            },time[temp]);
+            console.log(time[temp] + ' ceiling'+ temp);
             return()=>{
                 clearInterval(interval_id);
             }
