@@ -20,11 +20,11 @@ filter: invert(43%) sepia(81%) saturate(1412%) hue-rotate(200deg) brightness(98%
   width: 30%;
   height: 2%;
   position: fixed;
-  -webkit-transform: perspective(100px) rotate(90deg) rotateY(90deg);
+  -webkit-transform: perspective(100px) rotate(90deg) rotateY(120deg);
 
 }
 
-
+/*
 @media(prefers-reduced-motion: no-preference){
   .lantern__ray{
     animation: rainbow 40s ease-in-out infinite;
@@ -42,7 +42,7 @@ filter: invert(43%) sepia(81%) saturate(1412%) hue-rotate(200deg) brightness(98%
     -webkit-transform: perspective(100px)  rotate(90deg) rotateY(80deg);
   }
 }
-
+*/
 @media(prefers-reduced-motion: no-preference){
   .lantern__glare{
     animation: shining 4s infinite linear;

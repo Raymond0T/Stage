@@ -54,22 +54,22 @@
   flex-direction: row;
 }
 
-.app__lightMain__left{
-  justify-self: start;
-  align-self: end;
-  grid-column-start: 2;
-  grid-column-end: 3;
+.app__lightRight__Side{
+  justify-self: center;
+  align-self: center;
+  grid-column-start: 3;
+  grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
   display: flex;
   flex-direction: row;
 }
 
-.app__lightMain__right{
-  justify-self: end;
-  align-self: end;
-  grid-column-start: 2;
-  grid-column-end: 3;
+.app__lightLeft__Side{
+  justify-self: center;
+  align-self: center;
+  grid-column-start: 1;
+  grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
   display: flex;
