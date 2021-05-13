@@ -47,44 +47,44 @@ function App(){
   return (
     <div className="app"> 
       <div className="app__lightLeft__Side">
-        <Lantern posVert="14%" posHori="77%" color={option[color]} angle={45} showRay ={rayQueue[temp]}/>
-        <Lantern posVert="14%" posHori="74%" color={option[color]} angle={45} showRay ={rayQueue[temp]}/>
-        <Lantern posVert="14%" posHori="71%" color={option[color]} angle={45} showRay ={rayQueue[temp]}/>
-        <Lantern posVert="14%" posHori="68%" color={option[color]} angle={45} showRay ={rayQueue[temp]}/>
+        <Lantern posVert="12%" posHori="75%" color={option[color]} angle={45} />
+        <Lantern posVert="12%" posHori="72.5%" color={option[color]} angle={45} />
+        <Lantern posVert="12%" posHori="69.5%" color={option[color]} angle={45} />
+        <Lantern posVert="12%" posHori="66.5%" color={option[color]} angle={45} />
       </div> 
       <div className="app__lightLeft__Lower">
-        <Lantern posVert="14%" posHori="58.75%" color={option[color]}/>
-        <Lantern posVert="14%" posHori="55.75%" color={option[color]}/>
-        <Lantern posVert="14%" posHori="53%" color={option[color]}/>
-        <Lantern posVert="14%" posHori="50%" color={option[color]}/>
-        <Lantern posVert="14%" posHori="47%" color={option[color]}/>
+        <Lantern posVert="14%" posHori="58.75%" color={option[color]} angle={90}/>
+        <Lantern posVert="14%" posHori="55.75%" color={option[color]} angle={90}/>
+        <Lantern posVert="14%" posHori="53%" color={option[color]} angle={90}/>
+        <Lantern posVert="14%" posHori="50%" color={option[color]} angle={90}/>
+        <Lantern posVert="14%" posHori="47%" color={option[color]} angle={90}/>
       </div>
       <div className="app__lightLeft__Upper">
-        <Lantern posVert="8%" posHori="58.75%" color={option[color]}/>
-        <Lantern posVert="8%" posHori="55.75%" color={option[color]}/>
-        <Lantern posVert="8%" posHori="52.75%" color={option[color]}/>
-        <Lantern posVert="8%" posHori="50%" color={option[color]}/>
-        <Lantern posVert="8%" posHori="47%" color={option[color]}/>
+        <Lantern posVert="8%" posHori="58.75%" color={option[color]} angle={90}/>
+        <Lantern posVert="8%" posHori="55.75%" color={option[color]} angle={90}/>
+        <Lantern posVert="8%" posHori="52.75%" color={option[color]} angle={90}/>
+        <Lantern posVert="8%" posHori="50%" color={option[color]} angle={90}/>
+        <Lantern posVert="8%" posHori="47%" color={option[color]} angle={90}/>
       </div>
       <div className="app__lightRight__Side">
-        <Lantern posVert="14%" posHori="-7%" color={option[color]} angle={135}/>
-        <Lantern posVert="14%" posHori="-4%" color={option[color]} angle={135}/>
-        <Lantern posVert="14%" posHori="-1%" color={option[color]} angle={135}/>
-        <Lantern posVert="14%" posHori="2%" color={option[color]} angle={135}/>
+        <Lantern posVert="12%" posHori="-5%" color={option[color]} angle={135}/>
+        <Lantern posVert="12%" posHori="-2%" color={option[color]} angle={135}/>
+        <Lantern posVert="12%" posHori="1%" color={option[color]} angle={135}/>
+        <Lantern posVert="12%" posHori="4%" color={option[color]} angle={135}/>
       </div>
       <div className="app__lightRight__Lower">
-        <Lantern posVert="14%" posHori="23%" color={option[color]}/>
-        <Lantern posVert="14%" posHori="20%" color={option[color]}/>
-        <Lantern posVert="14%" posHori="17%" color={option[color]}/>
-        <Lantern posVert="14%" posHori="14%" color={option[color]}/>
-        <Lantern posVert="14%" posHori="12%" color={option[color]}/>
+        <Lantern posVert="14%" posHori="23%" color={option[color]} angle={90}/>
+        <Lantern posVert="14%" posHori="20%" color={option[color]} angle={90}/>
+        <Lantern posVert="14%" posHori="17%" color={option[color]} angle={90}/>
+        <Lantern posVert="14%" posHori="14%" color={option[color]} angle={90}/>
+        <Lantern posVert="14%" posHori="12%" color={option[color]} angle={90}/>
       </div>
       <div className="app__lightRight__Upper">
-        <Lantern posVert="8%" posHori="23%" color={option[color]}/>
-        <Lantern posVert="8%" posHori="20%" color={option[color]}/>
-        <Lantern posVert="8%" posHori="17%" color={option[color]}/>
-        <Lantern posVert="8%" posHori="14%" color={option[color]}/>
-        <Lantern posVert="8%" posHori="11%" color={option[color]}/>
+        <Lantern posVert="8%" posHori="23%" color={option[color]} angle={90}/>
+        <Lantern posVert="8%" posHori="20%" color={option[color]} angle={90}/>
+        <Lantern posVert="8%" posHori="17%" color={option[color]} angle={90}/>
+        <Lantern posVert="8%" posHori="14%" color={option[color]} angle={90}/>
+        <Lantern posVert="8%" posHori="11%" color={option[color]} angle={90}/>
       </div>
     {/*
       <ReactPlayer 
