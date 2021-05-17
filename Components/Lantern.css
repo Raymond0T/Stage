@@ -31,7 +31,7 @@ filter: invert(43%) sepia(81%) saturate(1412%) hue-rotate(200deg) brightness(98%
 
 @media(prefers-reduced-motion: no-preference){
   .lantern__rainbow{
-    animation: rainbow 60s ease-in-out infinite;
+    animation: rainbow 140s ease-in-out infinite;
   }
 }
 
@@ -39,8 +39,14 @@ filter: invert(43%) sepia(81%) saturate(1412%) hue-rotate(200deg) brightness(98%
   0%{
     -webkit-transform: perspective(100px)  rotate(90deg) rotateY(80deg);
   }
+  25%{
+    -webkit-transform: perspective(100px)  rotate(90deg) rotateY(120deg);
+  }
   50%{
-    -webkit-transform: perspective(100px)  rotate(90deg) rotateY(160deg);
+    -webkit-transform: perspective(100px)  rotate(90deg) rotateY(175deg);
+  }
+  75%{
+    -webkit-transform: perspective(100px)  rotate(90deg) rotateY(120deg);
   }
   100%{
     -webkit-transform: perspective(100px)  rotate(90deg) rotateY(80deg);

@@ -13,10 +13,10 @@ function Lantern({posVert, posHori, color, angle}){
         250: 'b10ed1'
     }
     
-    
-    const rayQueue = ['none','none','none','none','none','none','none','none','none','none','none','none','none','none','none'];
-    const sideRayQueue = ['none','none','block','none','block','none','block','none','block','none','block','none','block','none','none','none'];
-    const time = [10,50000,20000,2000,2000,2000,2000,2000,2000,2000,2000,2000,2000];
+    let matchUp = match[color];
+    const rayQueue = ['none','none','block','none','none','none','none','none','none','none','none','none','block','none','none','none','none','none','block','none','none','none','none','none','block','none','none','none','none','none','none','none'];
+    const sideRayQueue = ['none','none','block','none','block','none','block','none','block','none','block','none','block','none','block','none','block','none','block','none','block','none','block','none','block','none','block','none','block','none','block','none'];
+    const time = [10,49000,32000,1000,1000,2000,2000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000,1000];
 
     // 50se, 30 sec
     //let [angle, setAngle] = useState(0);
@@ -36,8 +36,8 @@ function Lantern({posVert, posHori, color, angle}){
 
         else if(flash < time.length){
             let interval_id = setTimeout(()=>{
-                console.log(flash + ' check ' + time[flash]);
                 setFlash(flash+=1);
+                console.log(flash + ' check ' + time[flash]);
             }, time[flash])
             return()=>{
                 clearInterval(interval_id);
