@@ -1,3 +1,3 @@
 # Stage
 
-Trying to create concert stage
+Testing different methods for fun by recreating a concert stage
